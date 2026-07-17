@@ -169,8 +169,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0.12in;
-      flex: 1 1 auto;
-      min-height: 0;
+      flex: 0 0 auto;
       align-items: stretch;
     }
 
@@ -181,7 +180,7 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      min-height: 0;
+      height: 100%;
     }
 
     .card-head {
@@ -252,12 +251,11 @@
     }
 
     .card-body {
-      padding: 0.1in 0.12in 0.11in;
+      padding: 0.11in 0.12in 0.12in;
       display: flex;
       flex-direction: column;
-      gap: 0.075in;
-      flex: 1;
-      min-height: 0;
+      gap: 0.09in;
+      flex: 1 1 auto;
     }
 
     .repo {
@@ -369,11 +367,12 @@
 
     /* Spine */
     .spine {
-      flex-shrink: 0;
+      flex: 0 0 auto;
+      margin-top: 0.02in;
       border: 1px solid var(--line);
       border-radius: 10px;
       background: var(--softer);
-      padding: 0.1in 0.12in;
+      padding: 0.11in 0.12in;
     }
 
     .spine h3 {
@@ -428,12 +427,13 @@
 
     /* Footer */
     footer {
-      flex-shrink: 0;
+      flex: 0 0 auto;
+      margin-top: auto;
       display: grid;
       grid-template-columns: 1.35fr 1fr;
       gap: 0.14in;
       align-items: center;
-      padding-top: 0.1in;
+      padding-top: 0.12in;
       border-top: 1px solid var(--line);
     }
 
